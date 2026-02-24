@@ -13,5 +13,4 @@ jobs:
         run: make
 
       - name: Run the program
-        run: echo "Petrov 11 Ivanov 12 Sidorov 13 Smith 14 Black 15 White 
-10 Brown 9" | ./app
+        run: echo "Petrov 11 Ivanov 12 Sidorov 13 Smith 14 Black 15 White 10 Brown 9" | ./app

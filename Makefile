@@ -9,14 +9,12 @@ DEPS = $(OBJ:.o=.d)
 all: $(TARGET)
 
 $(TARGET): $(OBJ)
-    $(CC) $(OBJ) -o $@
+	$(CC) $(OBJ) -o $@
 
 src/%.o: src/%.c
-    $(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-    rm -f $(TARGET) $(OBJ) $(DEPS)
+	rm -f $(TARGET) $(OBJ) $(DEPS)
 
 -include $(DEPS)
-
-

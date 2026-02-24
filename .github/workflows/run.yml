@@ -2,15 +2,15 @@ name: run
 on: [push, pull_request]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - name: Build with make
-        run: make
+      - name: Build with make
+        run: make
 
-      - name: Run the program
-        run: echo "Petrov 11 Ivanov 12 Sidorov 13 Smith 14 Black 15 White 10 Brown 9" | ./app
+      - name: Run the program
+        run: echo "Petrov 11 Ivanov 12 Sidorov 13 Smith 14 Black 15 White 10 Brown 9" | ./app
